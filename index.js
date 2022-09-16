@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { FlatList, Keyboard, Text, TextInput, TouchableOpacity, View, ViewPropTypes, StyleSheet } from 'react-native';
+import { FlatList, Keyboard, Text, TextInput, TouchableOpacity, View, StyleSheet } from 'react-native';
 import normalize from './utility/NormalizedText';
 import { hp, wp } from './utility/ResponsiveScreen';
 import Utils from './utility/Utils';
-
+import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 function styleByListSize(list) {
     const length = list.length;
     const height = hp('8.5%');
